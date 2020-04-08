@@ -1,23 +1,4 @@
-server:
-  port: 3344
-spring:
-  application:
-    name: cloud-config-center
-  cloud:
-    config:
-      server:
-        git:
-          uri:  https://github.com/hinzzz/spring-config.git
-          search-paths:
-            - springcloud-config #git仓库地址下的相对地址 多个用逗号","分割
-      label: master
-      name: config
-      profile: dev
-eureka:
-  client:
-    service-url:
-      defaultZone:  http://localhost:7001/eureka
-      
+
       
       
 config:
